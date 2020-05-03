@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutterblocpkg/src/Bloc/LoginBloc/LoginBloc.dart';
-import 'package:flutterblocpkg/src/Screens/Auth/LoginScreen.dart';
+import 'package:flutterblocpkg/src/Screens/Auth/LoginScreen/loginView.dart';
+
+import 'Screens/Auth/LoginScreen/loginBloc.dart';
 
 class MyApp extends StatefulWidget {
   MyApp({Key key}) : super(key: key);

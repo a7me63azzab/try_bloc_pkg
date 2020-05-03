@@ -7,6 +7,3 @@ class LoginStarted extends LoginEvents {
   LoginStarted({this.userName, this.password});
 }
 
-class LoginSucess extends LoginEvents{}
-
-class LoginFailed extends LoginEvents{}
