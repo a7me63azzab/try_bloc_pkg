@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutterblocpkg/src/Screens/Auth/LoginScreen/loginBloc.dart';
 import 'package:flutterblocpkg/src/Screens/Auth/LoginScreen/loginEvents.dart';
 import 'package:flutterblocpkg/src/Screens/Auth/LoginScreen/loginStates.dart';
+import 'package:flutterblocpkg/src/Screens/Home/homeBloc.dart';
+import 'package:flutterblocpkg/src/Screens/Home/homeView.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({Key key}) : super(key: key);
@@ -35,6 +37,13 @@ class LoginScreen extends StatelessWidget {
                 backgroundColor: Colors.greenAccent,
               ),
             );
+            Navigator.of(context)
+                .push(PageRouteBuilder(pageBuilder: (_, __, ___) {
+              return BlocProvider(
+                child: HomeView(),
+                create: (BuildContext context) => HomeBloc(),
+              );
+            }));
           }
         },
         child: BlocBuilder<LoginBloc, LoginState>(builder: (context, state) {

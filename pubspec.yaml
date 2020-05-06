@@ -25,6 +25,9 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_bloc: ^4.0.0
   dio: ^3.0.9
+  auto_size_text: ^2.1.0
+  flutter_rating_bar: ^3.0.0+1
+  flutter_swiper: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -41,6 +44,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
